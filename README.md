@@ -22,6 +22,18 @@ Agnes AI gives developers OpenAI-compatible access to multimodal models for text
 | API Platform | https://platform.agnes-ai.com/ |
 | API Base URL | `https://apihub.agnes-ai.com/v1` |
 
+## Developer Resources
+
+| Resource | Purpose |
+| --- | --- |
+| [`MODEL_CATALOG.md`](./MODEL_CATALOG.md) | Model families, endpoints, current reference limits, and compatibility notes. |
+| [`CHANGELOG.md`](./CHANGELOG.md) | Public documentation, model, quota, and integration updates. |
+| [`SUPPORT.md`](./SUPPORT.md) | Where to ask for help, what belongs in issues, and what belongs in discussions. |
+| [`docs/TROUBLESHOOTING.md`](./docs/TROUBLESHOOTING.md) | API error codes, debugging checklist, and retry guidance. |
+| [`docs/FAQ.md`](./docs/FAQ.md) | Common questions about access, limits, models, and video polling. |
+| [`docs/DISCUSSIONS.md`](./docs/DISCUSSIONS.md) | Recommended discussion categories and community workflow. |
+| [`examples/`](./examples) | Minimal curl, Python, and Node.js examples. |
+
 ## Models
 
 | Model | Type | Endpoint | Highlights |
