@@ -138,7 +138,7 @@ Use `video_id` for video result polling. Do not use `task_id` for current video 
 
 ## Security
 
-Never commit API keys, tokens, `.env` files, screenshots containing secrets, or private customer data.
+Never commit API keys, tokens, `.env` files, screenshots containing secrets, or private data.
 
 Use environment variables for local development:
 
