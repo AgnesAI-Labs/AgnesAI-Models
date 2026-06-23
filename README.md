@@ -38,7 +38,6 @@ Agnes AI gives developers OpenAI-compatible access to multimodal models for text
 
 | Model | Type | Endpoint | Highlights |
 | --- | --- | --- | --- |
-| `agnes-1.5-flash` | Text and vision-language | `/v1/chat/completions` | Low-latency chat, text generation, image URL input, high-throughput production use |
 | `agnes-2.0-flash` | Text and vision-language | `/v1/chat/completions` | Reasoning, coding, tool calling, streaming, image understanding, agent workflows |
 | `agnes-image-2.0-flash` | Image generation and editing | `/v1/images/generations` | Text-to-image, image-to-image, URL or Base64 output |
 | `agnes-image-2.1-flash` | Image generation and editing | `/v1/images/generations` | High-density visual generation, image editing, flexible sizes, URL or Base64 output |
@@ -147,7 +146,6 @@ export AGNES_API_KEY="your_api_key_here"
 See the official docs for model-specific parameters, response formats, pricing, limits, and troubleshooting:
 
 - https://agnes-ai.com/doc/overview
-- https://agnes-ai.com/doc/agnes-15-flash
 - https://agnes-ai.com/doc/agnes-20-flash
 - https://agnes-ai.com/doc/agnes-image-20-flash
 - https://agnes-ai.com/doc/agnes-image-21-flash
