@@ -22,7 +22,6 @@ POST /v1/chat/completions
 
 | Workflow | Recommended Model |
 | --- | --- |
-| General chat and content generation | `agnes-1.5-flash` |
 | Coding, reasoning, tool calling, and agent workflows | `agnes-2.0-flash` |
 | Text-to-image and image editing | `agnes-image-2.1-flash` |
 | Fast image generation | `agnes-image-2.0-flash` |
