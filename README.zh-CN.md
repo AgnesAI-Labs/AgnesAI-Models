@@ -138,7 +138,7 @@ GET https://apihub.agnes-ai.com/agnesapi?video_id=<VIDEO_ID>
 
 ## 安全
 
-不要提交 API Key、token、`.env` 文件、包含密钥的截图或私有客户数据。
+不要提交 API Key、token、`.env` 文件、包含密钥的截图或私有数据。
 
 本地开发时建议使用环境变量：
 
