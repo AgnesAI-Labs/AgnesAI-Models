@@ -35,12 +35,20 @@ This bilingual reference summarizes common Agnes API status codes, likely causes
 ## Integration Tips / 接入建议
 
 - Keep API keys in server-side environment variables. Never expose keys in client-side code, screenshots, public issues, or public repositories.
+- 请将 API Key 保存在服务端环境变量中。不要在客户端代码、截图、公开 issue 或公开仓库中暴露密钥。
+
 - Store sanitized request examples for debugging: model, endpoint, timestamp, request ID if available, status code, and response body with secrets removed.
+- 建议保存脱敏后的请求示例用于排查问题，包括模型、端点、时间戳、request ID（如有）、状态码，以及已移除密钥的响应体。
+
 - Add exponential backoff for transient errors such as `408`, `429`, `500`, `502`, `503`, `504`, `520`, `522`, and `524`.
+- 对 `408`、`429`、`500`、`502`、`503`、`504`、`520`、`522`、`524` 等临时性错误加入指数退避重试。
+
 - For video generation, create the task first and poll the result with `video_id`:
+- 视频生成请先创建任务，再使用 `video_id` 轮询查询结果：
 
 ```text
 GET https://apihub.agnes-ai.com/agnesapi?video_id=<VIDEO_ID>
 ```
 
 - For image and video requests, validate size, aspect ratio, frame rate, duration, public URL accessibility, and Base64 payload size before retrying.
+- 图片和视频请求在重试前，请先检查尺寸、宽高比、帧率、时长、公网 URL 可访问性，以及 Base64 请求体大小。
