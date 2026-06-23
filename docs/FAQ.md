@@ -1,6 +1,6 @@
 # Agnes AI FAQ
 
-Last updated: `2026-06-22 00:00 Asia/Shanghai`
+Last updated: `2026-06-22 00:00 Asia/Singapore`
 
 ## What is the API base URL?
 
