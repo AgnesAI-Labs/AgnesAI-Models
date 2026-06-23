@@ -1,8 +1,9 @@
 # Agnes AI
 
 <p align="center">
-  <a href="./README.md">English</a> |
-  <a href="./README.zh-CN.md">简体中文</a>
+  <a href="./README.md"><img src="https://img.shields.io/badge/Language-English-0A66C2?style=for-the-badge" alt="English"></a>
+  <a href="./README.zh-CN.md"><img src="https://img.shields.io/badge/Language-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-16A34A?style=for-the-badge" alt="简体中文"></a>
+  <a href="./docs/ERROR_CODES.md"><img src="https://img.shields.io/badge/Guide-Error%20Codes%20%7C%20%E5%B8%B8%E8%A7%81%E9%94%99%E8%AF%AF%E7%A0%81-FF5A5F?style=for-the-badge" alt="Error Codes | 常见错误码"></a>
 </p>
 
 Official gateway and model catalog for Agnes AI.
@@ -35,6 +36,7 @@ Agnes AI gives developers OpenAI-compatible access to multimodal models for text
 | [`CHANGELOG.md`](./CHANGELOG.md) | Public documentation, model, quota, and integration updates. |
 | [`SUPPORT.md`](./SUPPORT.md) | Where to ask for help, what belongs in issues, and what belongs in discussions. |
 | [`docs/TROUBLESHOOTING.md`](./docs/TROUBLESHOOTING.md) | API error codes, debugging checklist, and retry guidance. |
+| [`docs/ERROR_CODES.md`](./docs/ERROR_CODES.md) | Bilingual common API status codes, causes, and recommended fixes. |
 | [`docs/FAQ.md`](./docs/FAQ.md) | Common questions about access, limits, models, and video polling. |
 | [`docs/DISCUSSIONS.md`](./docs/DISCUSSIONS.md) | Recommended discussion categories and community workflow. |
 | [`examples/`](./examples) | Minimal curl, Python, and Node.js examples. |
