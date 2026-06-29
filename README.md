@@ -51,6 +51,49 @@ Agnes AI gives developers OpenAI-compatible access to multimodal models for text
 | `agnes-image-2.1-flash` | Image generation and editing | `/v1/images/generations` | High-density visual generation, image editing, flexible sizes, URL or Base64 output |
 | `agnes-video-v2.0` | Video generation | `/v1/videos` | Text-to-video, image-to-video, multi-image video, keyframe animation, async task API |
 
+## Python Quick Start
+
+Install the example dependencies:
+
+```bash
+pip install -r requirements.txt
+export AGNES_API_KEY="your_api_key_here"
+```
+
+Run a streaming chat completion:
+
+```python
+from openai import OpenAI
+
+client = OpenAI(
+    api_key="YOUR_AGNES_API_KEY",
+    base_url="https://apihub.agnes-ai.com/v1",
+)
+
+response = client.chat.completions.create(
+    model="agnes-2.0-flash",
+    messages=[
+        {"role": "user", "content": "Write a short intro to Agnes AI."}
+    ],
+    stream=True,
+)
+
+for chunk in response:
+    delta = chunk.choices[0].delta.content
+    if delta:
+        print(delta, end="")
+```
+
+Python examples:
+
+| Example | Purpose |
+| --- | --- |
+| [`examples/python/chat.py`](./examples/python/chat.py) | Streaming chat completion with `agnes-2.0-flash`. |
+| [`examples/python/openai_compatible.py`](./examples/python/openai_compatible.py) | Minimal OpenAI-compatible client configuration. |
+| [`examples/python/image_generation.py`](./examples/python/image_generation.py) | Text-to-image request with `agnes-image-2.1-flash`. |
+| [`examples/python/video_generation.py`](./examples/python/video_generation.py) | Text-to-video task creation and `video_id` polling. |
+| [`examples/python/agent_workflow.py`](./examples/python/agent_workflow.py) | Tool-calling style agent workflow example. |
+
 ## Current Access and Limits
 
 The values below are current public reference values as of `2026-06-28`. Base Token Plan quotas were published on `2026-06-22`; video RPM limits were updated on `2026-06-28`. These are operational limits, not permanent guarantees.
