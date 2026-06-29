@@ -4,6 +4,14 @@ All notable public documentation, model catalog, quota, and integration updates 
 
 This changelog is a public reference. Model availability, RPM limits, subscription quotas, and pricing may change over time. Always confirm production-critical values in the official Agnes AI platform console.
 
+## 2026-06-29
+
+### Added
+
+- Added runnable Python examples for chat, image generation, video generation, OpenAI-compatible configuration, and tool-calling style agent workflows.
+- Added `requirements.txt` and `pyproject.toml` for Python example dependencies.
+- Added a Python Quick Start section to `README.md`.
+
 ## 2026-06-28
 
 ### Added
