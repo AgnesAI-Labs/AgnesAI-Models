@@ -14,8 +14,8 @@ Agnes AI gives developers OpenAI-compatible access to multimodal models for text
 
 | Field | Value |
 | --- | --- |
-| Public documentation version | `2026.06.22` |
-| Last updated | `2026-06-22 00:00 Asia/Singapore` |
+| Public documentation version | `2026.06.28` |
+| Last updated | `2026-06-28 00:00 Asia/Singapore` |
 | Source of truth | Official website and API platform |
 | Change notice | Model availability, rate limits, pricing, and quota rules may change over time. Always confirm production-critical values in the official docs or platform console. |
 
@@ -38,6 +38,7 @@ Agnes AI gives developers OpenAI-compatible access to multimodal models for text
 | [`docs/TROUBLESHOOTING.md`](./docs/TROUBLESHOOTING.md) | API error codes, debugging checklist, and retry guidance. |
 | [`docs/ERROR_CODES.md`](./docs/ERROR_CODES.md) | Bilingual common API status codes, causes, and recommended fixes. |
 | [`docs/FAQ.md`](./docs/FAQ.md) | Common questions about access, limits, models, and video polling. |
+| [`docs/TOKEN_PLAN_FAQ.md`](./docs/TOKEN_PLAN_FAQ.md) | Token Plan access types, RPM limits, subscription quotas, and API key limit pools. |
 | [`docs/DISCUSSIONS.md`](./docs/DISCUSSIONS.md) | Recommended discussion categories and community workflow. |
 | [`examples/`](./examples) | Minimal curl, Python, and Node.js examples. |
 
@@ -52,15 +53,15 @@ Agnes AI gives developers OpenAI-compatible access to multimodal models for text
 
 ## Current Access and Limits
 
-The values below are current public reference values as of `2026-06-22`. They are operational limits, not permanent guarantees.
+The values below are current public reference values as of `2026-06-28`. Base Token Plan quotas were published on `2026-06-22`; video RPM limits were updated on `2026-06-28`. These are operational limits, not permanent guarantees.
 
 ### User Plans
 
-| User plan | Text model RPM | Image model quota | Video model quota |
+| User plan | Text model RPM | Image model RPM | Video model RPM and quota |
 | --- | ---: | --- | --- |
-| Free / default | 20 actual RPM | Resolution-specific RPM limits apply | 20 actual RPM |
-| Enterprise | 40 actual RPM | Higher resolution-specific RPM limits apply | 40 actual RPM |
-| Token Plan | 1,000 actual RPM for text models | Higher 1K and 2K image RPM limits apply | 100 actual RPM |
+| Free / default | 20 actual RPM | Resolution-specific RPM limits apply | 1 actual RPM |
+| Enterprise | 40 actual RPM | Higher resolution-specific RPM limits apply | 2 actual RPM |
+| Token Plan | 1,000 actual RPM for text models | Higher 1K and 2K image RPM limits apply | 5 actual RPM; 500 seconds per day |
 
 ### Subscription Quotas
 
@@ -70,7 +71,7 @@ The values below are current public reference values as of `2026-06-22`. They ar
 | Plus  | 7,500 requests per 5 hours; 75,000 requests per week | 4,000 images per day | 500 seconds per day |
 | Pro  | 30,000 requests per 5 hours; 300,000 requests per week | 4,000 images per day | 500 seconds per day |
 
-For detailed per-model RPM tables, see [`MODEL_CATALOG.md`](./MODEL_CATALOG.md).
+For detailed per-model RPM tables, quota rules, and API key pool behavior, see [`MODEL_CATALOG.md`](./MODEL_CATALOG.md) and [`docs/TOKEN_PLAN_FAQ.md`](./docs/TOKEN_PLAN_FAQ.md).
 
 ## Chat Example
 
